@@ -5,10 +5,10 @@ const Products = () => {
 
         <div className='h-screen flex-col '>
             <div className='flex justify-center items-center'>
-                <p className='text-3xl'><span className='text-button'>TEKGRO</span>  PRODUCTS</p>
+                <p className='my-8 text-3xl'><span className='text-button'>TEKGRO</span>  PRODUCTS</p>
             </div>
             <div className='my-2 flex justify-center items-center'>
-                <div class="max-w-2xl mx-auto">
+                <div class="max-w-9xl mx-auto">
                     <div class=" border-gray-200 dark:border-gray-700 mb-4">
                         <ul class="flex justify-center flex-wrap -mb-px" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                             <li class="mr-2" role="presentation">
@@ -30,11 +30,11 @@ const Products = () => {
                             <p class="text-gray-500 dark:text-gray-400 text-sm">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
                         </div>
                         <div class="bg-gray-50 p-4 flex rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                            <div>
-                                <img src="./left.png" alt="" />
+                            <div >
+                            <img src="./left.png" alt="" style={{height: "400px"}}/>
                             </div>
                             <div>
-                                <img src="./lms.png" alt="" />
+                                <img src="./lms.png" style={{height: "600px"}} alt="" />
                             </div>
                         </div>
                         <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden" id="settings" role="tabpanel" aria-labelledby="settings-tab">
