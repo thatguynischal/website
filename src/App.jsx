@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Homepage from './Pages/Homepage'
 import Products from './Pages/Products'
+import Capabilities from './Pages/Capabilities'
 
 
 function App() {
@@ -8,8 +9,9 @@ function App() {
 
   return (
     <>
-     <Homepage />
-     <Products />
+     {/* <Homepage />
+     <Products /> */}
+     <Capabilities />
     </>
   )
 }
