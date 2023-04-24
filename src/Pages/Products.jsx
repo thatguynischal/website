@@ -19,26 +19,26 @@ const Products = () => {
             >
               <li class="mr-2" role="presentation">
                 <button
-                  class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 dark:text-gray-400 dark:hover:text-gray-300 active"
+                  class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 dark:text-gray-400 dark:hover:text-gray-300 "
                   id="profile-tab"
                   data-tabs-target="#profile"
                   type="button"
                   role="tab"
                   aria-controls="profile"
-                  aria-selected="true"
+                  aria-selected="false"
                 >
                   LMS
                 </button>
               </li>
               <li class="mr-2" role="presentation">
                 <button
-                  class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 dark:text-gray-400 dark:hover:text-gray-300 "
+                  class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 dark:text-gray-400 dark:hover:text-gray-300 active"
                   id="dashboard-tab"
                   data-tabs-target="#dashboard"
                   type="button"
                   role="tab"
                   aria-controls="dashboard"
-                  aria-selected="false"
+                  aria-selected="true"
                 >
                   CRM
                 </button>
@@ -73,14 +73,13 @@ const Products = () => {
           </div>
           <div id="myTabContent">
             <div
-              class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden"
+              class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800"
               id="profile"
               role="tabpanel"
               aria-labelledby="profile-tab"
             >
               <div className="flex">
-                <img src="./left.png" alt="" style={{ height: "400px" }} />
-             
+                <img src="./left.png" alt="" style={{ height: "400px" }} /> 
                 <img src="./lms.png" style={{ height: "600px" }} alt="" />
               </div>
             </div>
@@ -90,7 +89,7 @@ const Products = () => {
               role="tabpanel"
               aria-labelledby="dashboard-tab"
             >
-              <p class="text-gray-500 dark:text-gray-400 text-sm">
+              <p class="text-gray-500 dark:text-gray-400 text-sm hidden">
                 This is some placeholder content the{" "}
                 <strong class="font-medium text-gray-800 dark:text-white">
                   Profile tab's associated content

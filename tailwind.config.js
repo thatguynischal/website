@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         'primary': '  #F1F6FF',
-        'button': '#1A75BB'
+        'button': '#1A75BB',
+        'fcolor' : '#36B729'
       },
     },
   },
