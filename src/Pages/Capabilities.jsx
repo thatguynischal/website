@@ -1,14 +1,117 @@
 import React from "react";
-import { Carousel } from "flowbite-react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 
 const Capabilities = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
   return (
+
+
     <div className="h-screen flex-col p-5">
       <div className="flex justify-center items-center">
-        <p className="my-4 text-3xl">
-          <span className="text-button">OUR</span> CAPABILITIES
+        <p className="my-4 text-5xl font-bold">
+          <span className="text-button">Our</span> Capabilities
         </p>
       </div>
+
+
+      <Carousel
+        swipeable={false}
+        draggable={false}
+        showDots={true}
+        responsive={responsive}
+        ssr={true} // means to render carousel on server-side.
+        infinite={true}
+        autoPlaySpeed={1000}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+      >
+
+        <div className=" flex-col justify-center items-center">
+          <div className="flex justify-center items-center">
+            <img src="./icon1.svg" alt="" />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-lg font-semibold">Design & Development 1</p>
+            <p>
+              Lorem ipsum dolor sit amet,
+              <br /> consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div className=" flex-col justify-center items-center">
+          <div className="flex justify-center items-center">
+            <img src="./icon1.svg" alt="" />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-lg font-semibold">Design & Development 2</p>
+            <p>
+              Lorem ipsum dolor sit amet,
+              <br /> consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div className=" flex-col justify-center items-center">
+          <div className="flex justify-center items-center">
+            <img src="./icon1.svg" alt="" />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-lg font-semibold">Design & Development 3</p>
+            <p>
+              Lorem ipsum dolor sit amet,
+              <br /> consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div className=" flex-col justify-center items-center">
+          <div className="flex justify-center items-center">
+            <img src="./icon1.svg" alt="" />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-lg font-semibold">Design & Development 4</p>
+            <p>
+              Lorem ipsum dolor sit amet,
+              <br /> consectetur adipiscing elit.
+            </p>
+          </div>
+        </div><div className=" flex-col justify-center items-center">
+          <div className="flex justify-center items-center">
+            <img src="./icon1.svg" alt="" />
+          </div>
+          <div className="flex flex-col justify-center items-center">
+            <p className="text-lg font-semibold">Design & Development 5</p>
+            <p>
+              Lorem ipsum dolor sit amet,
+              <br /> consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </Carousel>
+
       <div className="flex justify-center items-center">
         <p className="">
           We believe in creating solutions that are tailored to your unique
@@ -22,48 +125,7 @@ const Capabilities = () => {
           Solutions.
         </p>
       </div>
-      <div className="flex justify-center gap-20 my-6">
-        <div className="flex-col justify-center items-center">
-          <div className=" flex justify-center items-center">
-            <img src="./icon1.svg" alt="" />
-          </div>
-          <p className="text-lg font-semibold">Design & Development</p>
-          <p>
-            Lorem ipsum dolor sit amet,
-            <br /> consectetur adipiscing elit.
-          </p>
-        </div>
-        <div className="flex-col justify-center items-center">
-          <div className=" flex justify-center items-center">
-            <img src="./icon3.png" alt="" />
-          </div>
-          <p className="text-lg font-semibold">Design & Development</p>
-          <p>
-            Lorem ipsum dolor sit amet,
-            <br /> consectetur adipiscing elit.
-          </p>
-        </div>
-        <div className="flex-col justify-center items-center">
-          <div className=" flex justify-center items-center">
-            <img src="./icon3.png" alt="" />
-          </div>
-          <p className="text-lg font-semibold">Design & Development</p>
-          <p>
-            Lorem ipsum dolor sit amet,
-            <br /> consectetur adipiscing elit.
-          </p>
-        </div>
-        <div className="flex-col justify-center items-center">
-          <div className=" flex justify-center items-center">
-            <img src="./icon3.png" alt="" />
-          </div>
-          <p className="text-lg font-semibold">Design & Development</p>
-          <p>
-            Lorem ipsum dolor sit amet,
-            <br /> consectetur adipiscing elit.
-          </p>
-        </div>
-      </div>
+
       <div className="flex justify-center relative">
         <img src="./pc-laptop.png" alt="" className="h-1/6" />
         <img src="./header.png" alt="" className="absolute top-16" />

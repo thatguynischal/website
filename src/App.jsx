@@ -5,6 +5,8 @@ import Capabilities from './Pages/Capabilities'
 import Ads from './Pages/Ads'
 import Academy from './Pages/Academy'
 import Footer from './Pages/Footer'
+import 'flowbite';
+
 
 
 function App() {
@@ -12,12 +14,12 @@ function App() {
 
   return (
     <>
-     <Homepage />
-     <Products />
+     {/* <Homepage /> */}
+     {/* <Products /> */}
      <Capabilities />
-     <Ads />
-     <Academy />
-     <Footer />
+     {/* <Ads /> */}
+     {/* <Academy /> */}
+     {/* <Footer /> */}
     </>
   )
 }

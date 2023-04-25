@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaYoutube, FaSearch } from 'react-icons/fa';
 import { BsDot } from 'react-icons/bs'
+import { Dropdown } from 'flowbite-react';
 const Menu = () => {
 	return (
 		<div className='flex-col'>
@@ -37,16 +38,27 @@ const Menu = () => {
 					<div class="flex md:order-2">
 						<div className='hidden lg:flex'>
 							<div class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-teal-300 to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
-								<span class="flex text-button relative justify-center items-center gap-6 px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full ">
-									<FaFacebookF className='text-lg cursor-pointer hover:text-black'/>
+								<span class="flex text-button relative justify-center items-center gap-6 px-5 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full ">
+									<FaFacebookF className='text-lg cursor-pointer hover:text-black' />
 									<FaInstagram className='text-lg cursor-pointer hover:text-black' />
 									<FaLinkedin className='text-lg cursor-pointer hover:text-black' />
 									<FaYoutube className='text-xl cursor-pointer hover:text-black' />
 								</span>
 							</div>
 							<div className='flex justify-center items-center'>
-								<button type="button" class="text-white bg-button hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-3 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><FaSearch/></button>
-								<button type="button" class="text-white bg-button hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button>
+								<button type="button" class="text-white bg-button hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-3 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><FaSearch /></button>
+								<Dropdown
+									label="Login"
+									dismissOnClick={false}
+									class="text-white bg-button hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+								>
+									<Dropdown.Item>
+										Client Portal
+									</Dropdown.Item>
+									<Dropdown.Item>
+										Staff Portal
+									</Dropdown.Item>
+								</Dropdown>
 							</div>
 						</div>
 						<button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
@@ -64,23 +76,25 @@ const Menu = () => {
 						</span>
 					</li>
 					<li>
-						<span class="flex justify-center items-center relative transition-all ease-in duration-75 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
-							<BsDot />
-							Mobile Application Development
+						<span class="flex cursor-pointer justify-center items-center relative transition-all ease-in duration-300 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 transform hover:translate-x-2">
+							<span class="text-fcolor"><BsDot /></span>
+							<span class="ml-2">Mobile Application Development</span>
+						</span>
+					</li>
+
+					<li>
+						<span class="flex cursor-pointer justify-center items-center relative transition-all ease-in duration-300 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 transform hover:translate-x-2">
+							<span class="text-fcolor"><BsDot /></span>
+							<span class="ml-2">Content Management System</span>
 						</span>
 					</li>
 					<li>
-						<span class="flex justify-center items-center relative transition-all ease-in duration-75 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
-							<BsDot />
-							Content Management System						
-							</span>
+						<span class="flex cursor-pointer justify-center items-center relative transition-all ease-in duration-300 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 transform hover:translate-x-2">
+							<span class="text-fcolor"><BsDot /></span>
+							<span class="ml-2">Customer Relationship Manager</span>
+						</span>
 					</li>
-					<li>
-						<span class="flex justify-center items-center relative transition-all ease-in duration-75 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
-							<BsDot />
-							Customer Relationship Management						</span>
-					</li>
-				
+
 				</ul>
 			</div>
 		</div>

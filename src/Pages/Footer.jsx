@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md'
-import {CiShoppingTag} from 'react-icons/ci'
-import {TfiSupport} from 'react-icons/tfi'
+import { CiShoppingTag } from 'react-icons/ci'
+import { TfiSupport } from 'react-icons/tfi'
 
 const Footer = () => {
     return (
@@ -27,7 +27,7 @@ const Footer = () => {
                         <button type="button" class="text-white p-2 bg-button hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-bold rounded-full text-sm px-5 py-2.5 text-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><span className='text-xl'>CALL US</span></button>
                     </div>                </div>
                 <div className='flex flex-col gap-4'>
-                    <CiShoppingTag className='text-fcolor' size={40}/>
+                    <CiShoppingTag className='text-fcolor' size={40} />
                     <p className='text-fcolor text-lg font-bold'>Check Pricing</p>
                     <p className=''>Lorem ipsum dolor sit amet conseipisci nisi <br /> aliquid in pariatur ipsam illo,  <br />corporis architecto quidem? Aliquam, ut.</p>
                     <div className='flex'>
@@ -36,7 +36,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex flex-col gap-4'>
-                    <TfiSupport className='text-fcolor' size={40}/>
+                    <TfiSupport className='text-fcolor' size={40} />
                     <p className='text-fcolor text-lg font-bold'>24/7 Support</p>
                     <p className=''>We are on standby to answer any of your questions</p>
                     <div className='flex'>
@@ -45,9 +45,17 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='flex p-10 gap-10'>
+                <div className='p-4'>
+                    <img src="./tekgro-logo.png" alt="" style={{}} />
+                </div>
+
                 <div>
-                    <img src="./tekgro-logo.png" alt="" />
+                    <p className='leading-7'>specializes in providing comprehensive digital solutions. We are a team of experts who are dedicated to helping businesses grow by 
+                     leveraging the latest technology <br /> and digital marketing techniques. Our core services include software development, web development, 
+                      and design. Our team of developers and  designers work together to <br /> create  custom software and web applications that are tailored to meet 
+                       the unique needs of each of our clients. Our goal is to help you reach your target  audience and increase <br /> your online visibility, so that
+                        you can grow your business and succeed in today's digital landscape.</p>
                 </div>
             </div>
         </div>
