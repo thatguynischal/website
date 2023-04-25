@@ -115,22 +115,7 @@ const Products = () => {
                 <img src="./tekgro-graphics-lms-illustration.png" className="h-max" alt="" />
               </div>
             </div>
-            <div
-              className="bg-gray-50 p-4 flex rounded-lg dark:bg-gray-800"
-              id="dashboard"
-              role="tabpanel"
-              aria-labelledby="dashboard-tab"
-            >
-              <p className="text-gray-500 dark:text-gray-400 text-sm hidden">
-                This is some placeholder content the{" "}
-                <strong className="font-medium text-gray-800 dark:text-white">
-                  Profile tab's associated content
-                </strong>
-                . Clicking another tab will toggle the visibility of this one
-                for the next. The tab JavaScript swaps classes to control the
-                content visibility and styling.
-              </p>
-            </div>
+           
             <div
               className="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden"
               id="settings"

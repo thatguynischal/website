@@ -14,8 +14,8 @@ function App() {
 
   return (
     <>
-     {/* <Homepage /> */}
-     {/* <Products /> */}
+     <Homepage />
+     <Products />
      <Capabilities />
      {/* <Ads /> */}
      {/* <Academy /> */}
