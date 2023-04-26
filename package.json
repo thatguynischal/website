@@ -16,6 +16,7 @@
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-lordicon": "^1.0.2",
     "react-multi-carousel": "^2.8.3",
     "tw-elements": "^1.0.0-beta2"
   },

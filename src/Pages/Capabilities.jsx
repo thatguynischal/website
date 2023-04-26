@@ -27,28 +27,41 @@ const Capabilities = () => {
   const carouselData = [
     {
       id: 1,
-      img: "./icon1.svg",
-      title: "Design & Development 1",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      img: "./lotti1.gif",
+      title: "Design & Development",
+      text: "Lorem ipsum dolor sit amet, conse adipiscing elit conse adipiscing elit.",
     },
     {
       id: 2,
-      img: "./icon1.svg",
-      title: "Design & Development one",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      img: "./lotti2.gif",
+      title: "Security",
+      text: "Lorem ipsum dolor sit amet, conse adipiscing elit conse adipiscing elit.",
     },
     {
       id: 3,
-      img: "./icon1.svg",
-      title: "Design & Development uno",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      img: "./lotti3.gif",
+      title: "Web Optimization",
+      text: "Lorem ipsum dolor sit amet, conse adipiscing elit conse adipiscing elit.",
     },
     {
       id: 4,
-      img: "./icon1.svg",
-      title: "Design & Development dos",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      img: "./lotti4.gif",
+      title: "Tech Support",
+      text: "Lorem ipsum dolor sit amet, conse adipiscing elit conse adipiscing elit.",
     },
+    {
+      id: 5,
+      img: "./lotti5.gif",
+      title: "Digital Solutions",
+      text: "Lorem ipsum dolor sit amet, conse adipiscing elit conse adipiscing elit.",
+    },
+    {
+      id: 6,
+      img: "./lotti6.gif",
+      title: "Software Solutions",
+      text: "Lorem ipsum dolor sit amet, conse adipiscing elit conse adipiscing elit.",
+    },
+   
   ];
 
   const realData = carouselData.map((item) => (
@@ -58,39 +71,40 @@ const Capabilities = () => {
   return (
     <div className="h-screen flex-col p-5">
       <div className="flex justify-center items-center">
-        <p className="my-4 text-5xl font-bold">
+        <p className="text-5xl font-bold">
           <span className="text-button">Our</span> Capabilities
         </p>
       </div>
+      <div className="px-60">
+        <Carousel
+          swipeable={false}
+          draggable={true}
+          showDots={true}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-50-px"
+        >
+          {realData}
+        </Carousel>
 
-      <Carousel
-        swipeable={false}
-        draggable={true}
-        showDots={true}
-        responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        autoPlaySpeed={1000}
-        keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-50-px"
-      >
-        {realData}
-      </Carousel>
+      </div>
 
-      <div className="flex justify-center items-center my-4">
+      <div className="flex flex-col justify-center items-center my-5">
+      
         <p className="">
           We believe in creating solutions that are tailored to your unique
           needs, so you can focus on what you do{" "}
         </p>
-      </div>
-      <div className="flex justify-center items-center">
+
         <p className="">
-          {" "}
           best. Our goal is to help you maximize your potential with Our Digital
           Solutions.
         </p>

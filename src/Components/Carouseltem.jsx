@@ -5,7 +5,7 @@ const Carouseltem = (props) => {
     <div>
       <div className=" flex-col justify-center items-center w-fit p-7 ">
         <div className="flex justify-center items-center">
-          <img src= {props.img} alt="" />
+          <img src= {props.img} alt="" style={{height: '100px'}}/>
         </div>
         <div className="flex flex-col justify-center items-center">
           <p className="text-lg font-semibold">{props.title}</p>

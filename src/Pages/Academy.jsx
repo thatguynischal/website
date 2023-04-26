@@ -1,11 +1,39 @@
 import React from 'react'
+import Partners from '../Components/Partners'
+
 
 const Academy = () => {
+    const partnersData = [
+        {
+            id: 1,
+            img: "./wisecrave-partner-tekgro.jpg"
+        },
+        {
+            id: 2,
+            img: "./jamun-partner-tekgro.jpg"
+        },
+        {
+            id: 3,
+            img: "./tg-tekgro-academy-partner-tekgro.jpg"
+        },
+        {
+            id: 4,
+            img: "./all-tidy-partner-tekgro.jpg"
+        }
+    ];
+    const myData = partnersData.map((item) => (
+        <Partners img={item.img} />
+    ));
     return (
         <div className="h-screen flex gap-20 flex-col p-5 relative justify-center items-center">
             <img src="./bigcircle.png" alt="" className='absolute' />
-            <img src="./smallcircle.png" alt="" className='absolute top-52 left-2/4 -z-50' />
+            <img src="./smallcircle.png" alt="" className='absolute top-44 left-2/4 -z-50' />
             <img src="./smallcircle.png" alt="" className='absolute bottom-1/4 left-1/3 -z-50 h-36' />
+            <div className='flex flex-col justify-center items-center font-bold gap-3'>
+                <p className='text-slate-500 text-xl'>We are proud to work with Top-Performing companies,
+                </p>
+                <span className='text-button text-xl'>TekGro Customers! </span>
+            </div>
             <div className='flex justify-center items-center'>
                 <img src="./logoss.png" alt="" />
             </div>
@@ -31,11 +59,10 @@ const Academy = () => {
                 </div>
             </div>
 
-            <div className='mx-auto text-xl flex flex-col justify-center items-center'>
+            <div className='mx-auto text-xl flex flex-col justify-center items-center font-bold'>
                 <p><span className='text-button'>TekGro</span> <span className='text-slate-500'>Awards & Accreditation</span></p>
-                <div>
-                    <img src="./logoss.png" alt="" />
-
+                <div className='flex gap-4'>
+                    {myData}
                 </div>
             </div>
         </div>)
