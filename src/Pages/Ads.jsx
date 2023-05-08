@@ -5,7 +5,7 @@ const Ads = () => {
         <div className="flex gap-2 flex-col p-5 relative">
             <img src="./dec1.png" alt="" className='absolute h-56 -left-1 hidden lg:flex' />
             <img src="./dec2.png" alt="" className='absolute h-56 bottom-0 right-0 hidden lg:flex' />
-            <div className='flex justify-center gap-32 h-1/2'>
+            <div className='flex justify-center gap-32'>
                 <div className='flex justify-center items-center'>
                     <div className='flex gap-3 flex-col'>
                         <p className='text-4xl font-bold'>Do you want more <span className='text-button'>bookings</span> <br /> from more channels?</p>
@@ -20,7 +20,7 @@ const Ads = () => {
                     <img src="./tekgro-graphics-digital-marketing.png" alt="" className='h-96' />
                 </div>
             </div>
-            <div className='flex justify-center items-center gap-32'>
+            <div className='flex justify-center items-center gap-32 my-10 lg:my-0'>
                 <div className='hidden lg:flex'>
                     <img src="./tekgro-graphics-blogs-02.png" alt="" className='h-96' />
                 </div>
