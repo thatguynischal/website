@@ -61,7 +61,6 @@ const Capabilities = () => {
       title: "Software Solutions",
       text: "Lorem ipsum dolor sit amet, conse adipiscing elit conse adipiscing elit.",
     },
-   
   ];
 
   const realData = carouselData.map((item) => (
@@ -69,13 +68,13 @@ const Capabilities = () => {
   ));
 
   return (
-    <div className="h-screen flex-col p-5">
+    <div className="flex-col p-5">
       <div className="flex justify-center items-center">
         <p className="text-5xl font-bold">
           <span className="text-button">Our</span> Capabilities
         </p>
       </div>
-      <div className="px-60">
+      <div className="lg:px-6">
         <Carousel
           swipeable={false}
           draggable={true}
@@ -94,23 +93,19 @@ const Capabilities = () => {
         >
           {realData}
         </Carousel>
-
       </div>
 
       <div className="flex flex-col justify-center items-center my-5">
-      
-        <p className="">
-          We believe in creating solutions that are tailored to your unique
-          needs, so you can focus on what you do{" "}
-        </p>
-
-        <p className="">
-          best. Our goal is to help you maximize your potential with Our Digital
-          Solutions.
-        </p>
+        <div className="lg:w-2/3 text-center">
+          <p>
+            We believe in creating solutions that are tailored to your unique
+            needs, so you can focus on what you do best. Our goal is to help you
+            maximize your potential with Our Digital Solutions.
+          </p>
+        </div>
       </div>
 
-      <div className="flex justify-center relative">
+      <div className="justify-center relative hidden lg:flex">
         <img src="./pc-laptop.png" alt="" className="h-1/6" />
         <img src="./header.png" alt="" className="absolute top-16" />
         <div className="absolute top-40">
@@ -146,53 +141,3 @@ const Capabilities = () => {
 };
 
 export default Capabilities;
-{
-  /* <div className=" flex-col justify-center items-center">
-          <div className="flex justify-center items-center">
-            <img src="./icon1.svg" alt="" />
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <p className="text-lg font-semibold">Design & Development 2</p>
-            <p>
-              Lorem ipsum dolor sit amet,
-              <br /> consectetur adipiscing elit.
-            </p>
-          </div>
-        </div>
-        <div className=" flex-col justify-center items-center">
-          <div className="flex justify-center items-center">
-            <img src="./icon1.svg" alt="" />
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <p className="text-lg font-semibold">Design & Development 3</p>
-            <p>
-              Lorem ipsum dolor sit amet,
-              <br /> consectetur adipiscing elit.
-            </p>
-          </div>
-        </div>
-        <div className=" flex-col justify-center items-center">
-          <div className="flex justify-center items-center">
-            <img src="./icon1.svg" alt="" />
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <p className="text-lg font-semibold">Design & Development 4</p>
-            <p>
-              Lorem ipsum dolor sit amet,
-              <br /> consectetur adipiscing elit.
-            </p>
-          </div>
-        </div>
-        <div className=" flex-col justify-center items-center">
-          <div className="flex justify-center items-center">
-            <img src="./icon1.svg" alt="" />
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <p className="text-lg font-semibold">Design & Development 5</p>
-            <p>
-              Lorem ipsum dolor sit amet,
-              <br /> consectetur adipiscing elit.
-            </p>
-          </div>
-        </div> */
-}

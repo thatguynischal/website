@@ -2,9 +2,9 @@ import React from 'react'
 
 const Ads = () => {
     return (
-        <div className="h-screen flex gap-2 flex-col p-5 relative">
-            <img src="./dec1.png" alt="" className='absolute h-56 -left-1' />
-            <img src="./dec2.png" alt="" className='absolute h-56 bottom-0 right-0' />
+        <div className="flex gap-2 flex-col p-5 relative">
+            <img src="./dec1.png" alt="" className='absolute h-56 -left-1 hidden lg:flex' />
+            <img src="./dec2.png" alt="" className='absolute h-56 bottom-0 right-0 hidden lg:flex' />
             <div className='flex justify-center gap-32 h-1/2'>
                 <div className='flex justify-center items-center'>
                     <div className='flex gap-3 flex-col'>

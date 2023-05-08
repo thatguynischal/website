@@ -9,7 +9,7 @@ const Carouseltem = (props) => {
         </div>
         <div className="flex flex-col justify-center items-center">
           <p className="text-lg font-semibold">{props.title}</p>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center text-center">
           <p>{props.text}</p> 
           </div>
         </div>

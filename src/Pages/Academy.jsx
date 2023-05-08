@@ -25,7 +25,7 @@ const Academy = () => {
         <Partners img={item.img} />
     ));
     return (
-        <div className="h-screen flex gap-20 flex-col p-5 relative justify-center items-center">
+        <div className="flex gap-20 flex-col p-5 relative justify-center items-center">
             <img src="./bigcircle.png" alt="" className='absolute' />
             <img src="./smallcircle.png" alt="" className='absolute top-44 left-2/4 -z-50' />
             <img src="./smallcircle.png" alt="" className='absolute bottom-1/4 left-1/3 -z-50 h-36' />

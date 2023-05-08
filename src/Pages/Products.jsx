@@ -3,7 +3,7 @@ import { SlBookOpen } from 'react-icons/sl'
 
 const Products = () => {
   return (
-    <div className="h-screen flex-col ">
+    <div className=" flex-col ">
       <div className="flex justify-center items-center">
         <p className="my-8 text-5xl font-bold">
           <span className="text-button">Tekgro</span> Products
@@ -84,7 +84,7 @@ const Products = () => {
               aria-labelledby="profile-tab"
             >
               <div className="flex justify-center items-center">
-                <div className="bg-icolor p-6 w-1/3 flex flex-col gap-1">
+                <div className="bg-icolor p-6 lg:w-1/3 flex flex-col gap-1">
                   <div className="flex gap-10 justify-center items-center hover:bg-white p-4 rounded-lg cursor-pointer">
                     <SlBookOpen className="text-fcolor my-" size={90} />
                     <p>
@@ -112,7 +112,7 @@ const Products = () => {
                   </div>
 
                 </div>
-                <img src="./tekgro-graphics-lms-illustration.png" className="h-max" alt="" />
+                <img src="./tekgro-graphics-lms-illustration.png" className="h-max hidden xl:flex" alt="" />
               </div>
             </div>
            
