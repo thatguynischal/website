@@ -1,10 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    font-family:'Space Grotesk', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    /* background: #F1F6FF; */
+* {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background: #F1F6FF; */
+}
+
+@media (min-width: 1024px) {
+  .mainDiv {
+    background: url("./tekgro-solution-gif.gif");
+    background-size: 107%;
+  }
 }
