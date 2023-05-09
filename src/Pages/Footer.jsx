@@ -121,52 +121,38 @@ const Footer = () => {
 
         <div className=" gap-5 lg:gap-10  md:grid md:grid-cols-2 grid grid-cols-1 lg:flex justify-center">
           <div className=" ">
-            <p className="text-xl   flex items-center text-button font-bold">
+            <p className="text-xl   flex  items-center text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Quick Link
             </p>
-            <div className="flex lg:ml-12   md:block  lg:block">
-              <p>
-                Tekgro Overview<span className="mx-1  lg:hidden">|</span>
-              </p>
-              <p>
-                Career<span className="mx-1  lg:hidden">|</span>
-              </p>
-              <p>
-                Blogs<span className="mx-1  lg:hidden">|</span>
-              </p>
-              <p>
-                Knowledge Base<span className="mx-1  lg:hidden">|</span>
-              </p>
+            <div className="hidden lg:ml-12   md:block  lg:block">
+              <p>Tekgro Overview</p>
+              <p>Career</p>
+              <p>Blogs</p>
+              <p>Knowledge Base</p>
+            </div>
+            <div className=" lg:ml-11 lg:hidden md:hidden flex">
+              <p>Tekgro Overview | Career | Blogs | Knowledge Base</p>
             </div>
           </div>
           <div>
             <p className="text-xl flex items-center  text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Tekgro Capability
             </p>
-            <div className="flex  lg:ml-11  md:block  lg:block">
+            <div className="hidden lg:ml-11  md:block  lg:block">
+              <p>Design & Development</p>
+              <p>Security, Tech Support</p>
+              <p>Web Optimization</p>
+              <p>Digital Solution</p>
+              <p>Software Solution</p>
+              <p>Domain & SSL</p>
+              <p>Digital Marketing</p>
+              <p>Web Hosting</p>
+            </div>
+            <div className=" lg:ml-11 lg:hidden md:hidden flex">
               <p>
-                Design & Development<span className="mx-1  lg:hidden">|</span>
-              </p>
-              <p>
-                Security, Tech Support<span className="mx-1  lg:hidden">|</span>
-              </p>
-              <p>
-                Web Optimization<span className="mx-1  lg:hidden">|</span>
-              </p>
-              <p>
-                Digital Solution<span className="mx-1  lg:hidden">|</span>
-              </p>
-              <p>
-                Software Solution<span className="mx-1  lg:hidden">|</span>
-              </p>
-              <p>
-                Domain & SSL<span className="mx-1  lg:hidden">|</span>
-              </p>
-              <p>
-                Digital Marketing<span className="mx-1  lg:hidden">|</span>
-              </p>
-              <p>
-                Web Hosting<span className="mx-1  lg:hidden">|</span>
+                Design & Development| Security, Tech Support | Web Optimization
+                | Digital Solution | Software Solution | Domain & SSL | Digital
+                Marketing | Web Hosting
               </p>
             </div>
           </div>
@@ -174,22 +160,28 @@ const Footer = () => {
             <p className="text-xl flex items-center   text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Legal
             </p>
-            <div className=" lg:ml-11  md:block  lg:block">
+            <div className="hidden  lg:ml-11  md:block  lg:block">
               <p>Privacy Policy</p>
               <p>Disclaimer</p>
               <p>Terms & Condition</p>
+            </div>
+            <div className=" lg:ml-11 lg:hidden md:hidden flex">
+              <p> Privacy Policy | Disclaimer | Terms & Condition </p>
             </div>
           </div>
           <div>
             <p className="text-xl flex items-center   text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Social Media
             </p>
-            <div className=" lg:ml-10  md:block  lg:block">
-              <p>Youtube</p>
+            <div className="hidden lg:ml-10  md:block  lg:block">
+              <p className="flex">Youtube</p>
               <p>Facebook</p>
               <p>Instagram</p>
               <p>TikTok</p>
               <p>LinkedIn</p>
+            </div>
+            <div className=" lg:ml-11 lg:hidden md:hidden flex">
+              <p>Facebook | Instagram | TikTok | LinkedIn |</p>
             </div>
           </div>
 
@@ -197,23 +189,35 @@ const Footer = () => {
             <p className="text-xl flex items-center   text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Australia
             </p>
-            <div className="lg:ml-10  md:block  lg:block">
+            <div className="hidden lg:ml-10  md:block  lg:block">
               <p>0280 743 892</p>
               <p>support@tekgro.com.au</p>
               <p>43 Cremin Street, Upper</p>
               <p>Mount Gravatt QLD 4122</p>
               <p>ABN : 52 631 588 611</p>
             </div>
+            <div className=" lg:ml-11 lg:hidden md:hidden flex">
+              <p>
+                0280 743 892 | support@tekgro.com.au | 43 Cremin Street, Upper |
+                Mount Gravatt QLD 4122 | ABN : 52 631 588 611
+              </p>
+            </div>
           </div>
           <div>
             <p className="text-xl flex items-center   text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Nepal
             </p>
-            <div className=" lg:ml-8   md:block  lg:block">
+            <div className="hidden lg:ml-8   md:block  lg:block">
               <p>+977-9802330080</p>
               <p>support@tekgro.com.au</p>
               <p>Old Baneshwor</p>
               <p>Kathmandu</p>
+            </div>
+            <div className=" lg:ml-11 lg:hidden md:hidden flex">
+              <p>
+                +977-9802330080 | support@tekgro.com.au | support@tekgro.com.au
+                | Old Baneshwor | Kathmandu
+              </p>
             </div>
           </div>
         </div>
