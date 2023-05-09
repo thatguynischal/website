@@ -7,8 +7,8 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import { BsDot } from "react-icons/bs";
-import { Dropdown } from "flowbite-react"; 
-import Test from "../Pages/Test"
+import { Dropdown } from "flowbite-react";
+import Test from "../Pages/Test";
 const Menu = () => {
   return (
     <div className="flex-col">
@@ -18,24 +18,24 @@ const Menu = () => {
             <a href="#" class="flex items-center flex-col p-2">
               <img src="./logo.svg" alt="" className="h-12" />
             </a>
-            <div className="hidden md:block">
-              <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
+            <div className="hidden lg:block">
+              <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none hover:ring-lime-200 dark:focus:ring-lime-800">
                 <span class="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
                   Products
                 </span>
               </button>
-              <span class="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-75 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
+              <button class="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-75 hover:bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 hover:from-teal-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
                 Solutions
-              </span>
-              <span class="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-75 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
+              </button>
+              <button class="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-75 hover:bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 hover:from-teal-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
                 TekGro
-              </span>
-              <span class="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-75 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
+              </button>
+              <button class="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-75 hover:bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 hover:from-teal-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
                 Blogs
-              </span>
-              <span class="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-75 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
-                Customers
-              </span>
+              </button>
+              <button class="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-75 hover:bg-white dark:bg-gray-900 rounded-full group-hover:bg-opacity-0 hover:from-teal-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
+                Solutions
+              </button>
               <span class="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-75 dark:bg-gray-900 rounded-full group-hover:bg-opacity-0">
                 Contact
               </span>
@@ -64,28 +64,30 @@ const Menu = () => {
                 </Dropdown>
               </div>
             </div>
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+            <div>
+              <button
+                data-collapse-toggle="navbar-sticky"
+                type="button"
+                class="bg-button inline-flex items-center p-3 text-sm text-gray-500 rounded-full lg:hidden flex-col"
+                aria-controls="navbar-sticky"
+                aria-expanded="false"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
+                <svg
+                  class="w-6 h-6 text-white"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <p className="text-slate-950 lg:hidden">Menu</p>
+            </div>
           </div>
         </div>
       </nav>
@@ -101,7 +103,9 @@ const Menu = () => {
               <span class="text-fcolor">
                 <BsDot />
               </span>
-              <span class="ml-2">Mobile Application Development</span>
+              <span class="ml-2 hover:text-fcolor">
+                Mobile Application Development
+              </span>
             </span>
           </li>
 
@@ -110,7 +114,9 @@ const Menu = () => {
               <span class="text-fcolor">
                 <BsDot />
               </span>
-              <span class="ml-2">Content Management System</span>
+              <span class="ml-2 hover:text-fcolor">
+                Content Management System
+              </span>
             </span>
           </li>
           <li>
@@ -118,7 +124,9 @@ const Menu = () => {
               <span class="text-fcolor">
                 <BsDot />
               </span>
-              <span class="ml-2">Customer Relationship Manager</span>
+              <span class="ml-2 hover:text-fcolor">
+                Customer Relationship Manager
+              </span>
             </span>
           </li>
         </ul>
