@@ -8,17 +8,16 @@ import Footer from './Pages/Footer'
 import 'flowbite';
 
 
-
 function App() {
 
   return (
     <>
      <Homepage />
-     <Products />
+     {/* <Products />
      <Capabilities />
      <Ads />
-     <Academy />
-     <Footer />
+     <Academy /> */}
+     {/* <Footer /> */}
     </>
   )
 }

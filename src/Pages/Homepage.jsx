@@ -9,7 +9,7 @@ const Homepage = () => {
           <Menu />
         </div>
         <div className='flex flex-grow'>
-          <div className='lg:w-1/2 flex justify-center items-center z-10'>
+          <div className='lg:w-1/2 flex justify-center items-center'>
             <div className='p-20 flex flex-col gap-4'>
               <p className='text-5xl font-bold'><span className='text-button'>Tekgro:</span>  The Ultimate <br /> Solution for Your Digital <br /> Problems.</p>
               <p>Join the ranks of successful businesses with our premium digital <br />
