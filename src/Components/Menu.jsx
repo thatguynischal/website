@@ -24,8 +24,8 @@ const Menu = () => {
       <nav class="bg-transparent dark:bg-gray-900  w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen flex flex-wrap items-center justify-between mx-4 p-4">
           <div className="flex gap-14 justify-center items-center">
-            <a href="#" class="flex items-center flex-col p-2">
-              <img src="./logo.svg" alt="" className="h-12" />
+            <a href="#" class="flex items-center flex-col lg:p-2">
+              <img src="./logo.svg" alt="" className="lg:h-12 h-8" />
             </a>
             <div className="hidden lg:block">
               <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none hover:ring-lime-200 dark:focus:ring-lime-800">
@@ -57,7 +57,10 @@ const Menu = () => {
                   href="tel:0280743892"
                   class="bg-button inline-flex items-center p-3 text-sm text-gray-500 rounded-full lg:hidden flex-col"
                 >
-                  <AiTwotonePhone color="white" size={25} />
+                  <div>
+                    {" "}
+                    <AiTwotonePhone color="white" size={15} />
+                  </div>
                 </a>
                 <p className="text-slate-950 lg:hidden my-2">Call Us</p>
               </div>
@@ -76,12 +79,12 @@ const Menu = () => {
                     arrowIcon={false}
                     label={
                       <div className="lg:flex justify-center items-center gap-4 ">
-                        <FaUser className="lg:hidden" />{" "}
+                        <FaUser size={10} className="lg:hidden" />{" "}
                         <p className="hidden lg:flex">Login</p>
                       </div>
                     }
                     dismissOnClick={false}
-                    class="rounded-full py-2 lg:py-0 text-white bg-button hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium text-sm text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    class="rounded-full py-2 lg:py-0 text-white bg-button hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium text-sm text-center mr-2 mb-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     <Dropdown.Item>Client Portal</Dropdown.Item>
                     <Dropdown.Item>Staff Portal</Dropdown.Item>
