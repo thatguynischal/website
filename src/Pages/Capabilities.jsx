@@ -2,8 +2,14 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Carouseltem from "../Components/Carouseltem";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Capabilities = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -109,7 +115,7 @@ const Capabilities = () => {
         <img src="./pc-laptop.png" alt="" className="h-1/6  relative" />
         <img src="./header.png" alt="" className="absolute top-16" />
         <div className="absolute top-40">
-          <p className="text-2xl font-bold">
+          <p className="text-2xl font-bold" data-aos="zoom-in">
             Transform Your Online <br />
             Presence <span className="text-button">with TekGro</span>
           </p>
@@ -126,7 +132,10 @@ const Capabilities = () => {
           <div className="flex justify-center items-center">
             <span className="font-bold">Contact Us to Get Started.</span>
           </div>
-          <div className="flex justify-center items-center my-5">
+          <div
+            className="flex justify-center items-center my-5"
+            data-aos="fade-up"
+          >
             <button
               type="button"
               className="text-white bg-button hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-bold rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"

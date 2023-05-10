@@ -1,6 +1,11 @@
 import React from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Ads = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="flex gap-2 flex-col p-5 relative">
       <img

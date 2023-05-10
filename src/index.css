@@ -13,5 +13,6 @@
   .mainDiv {
     background: url("./tekgro-solution-gif.gif");
     background-size: 107%;
+    background-repeat: no-repeat;
   }
 }

@@ -13,6 +13,7 @@ import { Dropdown } from "flowbite-react";
 import Test from "../Pages/Test";
 import { useState } from "react";
 import { List, X } from "phosphor-react";
+
 const Menu = () => {
   const [nav, setNav] = useState(false);
 
@@ -22,9 +23,9 @@ const Menu = () => {
   return (
     <div className="flex-col">
       <nav class="bg-transparent dark:bg-gray-900  w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-        <div class="max-w-screen flex flex-wrap items-center justify-between mx-4 p-4">
+        <div class="max-w-screen flex  items-center justify-between mx-4 p-4">
           <div className="flex gap-14 justify-center items-center">
-            <a href="#" class="flex items-center flex-col p-2">
+            <a href="#" class="flex items-center flex-col  p-2">
               <img src="./logo.svg" alt="" className="h-12" />
             </a>
             <div className="hidden lg:block">
@@ -57,7 +58,7 @@ const Menu = () => {
                   href="tel:0280743892"
                   class="bg-button inline-flex items-center p-3 text-sm text-gray-500 rounded-full lg:hidden flex-col"
                 >
-                  <AiTwotonePhone color="white" size={25} />
+                  <AiTwotonePhone color="white" size={22} />
                 </a>
                 <p className="text-slate-950 lg:hidden my-2">Call Us</p>
               </div>
@@ -76,7 +77,7 @@ const Menu = () => {
                     arrowIcon={false}
                     label={
                       <div className="lg:flex justify-center items-center gap-4 ">
-                        <FaUser className="lg:hidden" />{" "}
+                        <FaUser className="lg:hidden " />{" "}
                         <p className="hidden lg:flex">Login</p>
                       </div>
                     }
@@ -154,7 +155,7 @@ const Menu = () => {
           </div>
           <input
             type="text"
-            className="rounded-full border-teal-300 w-96 h-10"
+            className="rounded-full border-teal-300 w-96  h-10"
             placeholder="Search anything you want."
           />
           <button
