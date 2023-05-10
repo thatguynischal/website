@@ -35,7 +35,7 @@ const Academy = () => {
         className="absolute bottom-1/4 left-1/3 -z-50 h-36"
       />
       <div className="flex flex-col justify-center items-center font-bold gap-3">
-        <p className="text-slate-500 text-xl">
+        <p className="text-slate-500 text-center lg:text-left text-xl">
           We are proud to work with Top-Performing companies,
         </p>
         <span className="text-button text-xl">TekGro Customers! </span>
@@ -56,7 +56,7 @@ const Academy = () => {
             {" "}
             Unlock Your Web Development and Designing <br />{" "}
           </p>
-          <p className="text-2xl">
+          <p className="text-2xl text-center">
             Potential with <span className="text-button">TekGro Academy</span>
           </p>
         </div>

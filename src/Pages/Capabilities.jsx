@@ -69,7 +69,7 @@ const Capabilities = () => {
 
   return (
     <div className="flex-col p-5">
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center text-center items-center">
         <p className="text-5xl font-bold">
           <span className="text-button">Our</span> Capabilities
         </p>
