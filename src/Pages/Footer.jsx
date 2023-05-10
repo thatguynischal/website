@@ -22,7 +22,7 @@ const Footer = () => {
         <img
           src="./Rectangle.png"
           alt=""
-          className="rounded-3xl h-96 md:h-56 absolute  w-96 -z-50 lg:w-full"
+          className="rounded-3xl h-96 md:h-56 absolute  w-[97%] -z-50 lg:w-full"
         />
         <div className="px-20 flex flex-col justify-center items-center">
           <p className="text-2xl text-white text-center font-bold">
