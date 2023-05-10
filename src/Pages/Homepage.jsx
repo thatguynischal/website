@@ -5,14 +5,7 @@ import ReactAudioPlayer from "react-audio-player";
 const style = {};
 const Homepage = () => {
   return (
-    <div
-      className="mainDiv h-screen relative"
-      style={{
-        background: "url('./tekgro-solution-gif.gif')",
-        backgroundPosition: "65%",
-        backgroundSize: "cover",
-      }}
-    >
+    <div className="mainDiv h-screen relative">
       <div className="h-full flex flex-col">
         <div>
           <Menu />
