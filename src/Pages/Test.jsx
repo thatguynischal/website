@@ -38,7 +38,7 @@ const Test = () => {
     setIsOpen(false);
   }
   return (
-    <div>
+    <div className="hidden lg:flex">
       <button
         class="text-white bg-button hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-3 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         onClick={openModal}
