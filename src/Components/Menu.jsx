@@ -7,7 +7,7 @@ import {
   FaSearch,
   FaUser,
 } from "react-icons/fa";
-import {AiOutlinePhone} from "react-icons/ai"
+import { AiTwotonePhone } from "react-icons/ai";
 import { BsDot } from "react-icons/bs";
 import { Dropdown } from "flowbite-react";
 import Test from "../Pages/Test";
@@ -54,10 +54,10 @@ const Menu = () => {
             <div className="flex justify-center justify-items-center gap-3">
               <div>
                 <a
-                href="tel:0280743892"
+                  href="tel:0280743892"
                   class="bg-button inline-flex items-center p-3 text-sm text-gray-500 rounded-full lg:hidden flex-col"
                 >
-                 <AiOutlinePhone color="white" size={25}/>
+                  <AiTwotonePhone color="white" size={25} />
                 </a>
                 <p className="text-slate-950 lg:hidden my-2">Call Us</p>
               </div>
@@ -142,6 +142,27 @@ const Menu = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex lg:hidden justify-center gap-2 mb-2 px-5">
+          <div class="relative items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-teal-300 to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
+            <span class="flex text-button relative justify-center items-center gap-6 px-5 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-full ">
+              <FaFacebookF className="text-lg cursor-pointer hover:text-black" />
+              <FaInstagram className="text-lg cursor-pointer hover:text-black" />
+              <FaLinkedin className="text-lg cursor-pointer hover:text-black" />
+              <FaYoutube className="text-xl cursor-pointer hover:text-black" />
+            </span>
+          </div>
+          <input
+            type="text"
+            className="rounded-full border-teal-300 w-96 h-10"
+            placeholder="Search anything you want."
+          />
+          <button
+            type="button"
+            class="text-white bg-button hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm p-3 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            <FaSearch />
+          </button>
         </div>
       </nav>
       <div class="bg-transparent hidden lg:flex dark:bg-gray-900 w-full z-20 top-24 left-0 p-3 px-11">
