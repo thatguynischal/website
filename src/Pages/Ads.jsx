@@ -48,12 +48,18 @@ const Ads = () => {
             src="./tekgro-graphics-digital-marketing.png"
             alt=""
             className="h-96"
+            data-aos="zoom-in"
           />
         </div>
       </div>
       <div className="flex justify-center items-center gap-32 my-10 lg:my-0">
         <div className="hidden lg:flex">
-          <img src="./tekgro-graphics-blogs-02.png" alt="" className="h-96" />
+          <img
+            src="./tekgro-graphics-blogs-02.png"
+            alt=""
+            className="h-96"
+            data-aos="zoom-in"
+          />
         </div>
         <div className="flex   justify-center items-center">
           <div className="flex justify-center max-w-[500px]   items-center">

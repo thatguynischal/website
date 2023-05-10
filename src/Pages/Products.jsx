@@ -12,7 +12,7 @@ const Products = () => {
         </p>
       </div>
       <Tabs>
-        <div className=" border-gray-200 dark:border-gray-700 mb-4">
+        <div className=" border-gray-200  mt-4 dark:border-gray-700 mb-4">
           <ul className="flex justify-center flex-wrap -mb-px">
             <TabList>
               <div className="lg:flex">
