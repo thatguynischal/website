@@ -1,12 +1,13 @@
 import React from "react";
-import { SlBookOpen } from 'react-icons/sl'
+import { SlBookOpen } from "react-icons/sl";
 
 const Products = () => {
   return (
     <div className=" flex-col ">
-      <div className="flex justify-center items-center">
-        <p className="my-8 text-5xl font-bold">
-          <span className="text-button">Tekgro</span> Products
+      <div className="flex justify-center  items-center">
+        <p className="mt-20 lg:mt-15   text-5xl font-bold ">
+          <span className="text-button">Tekgro</span>
+          Products
         </p>
       </div>
       <div className="my-2 flex justify-center items-center">
@@ -89,33 +90,45 @@ const Products = () => {
                     <SlBookOpen className="text-fcolor my-" size={90} />
                     <p>
                       <strong>Course management: </strong>
-                      Allows instructors to create and manage course content, including uploading documents, creating quizzes, and managing discussion forums.
+                      Allows instructors to create and manage course content,
+                      including uploading documents, creating quizzes, and
+                      managing discussion forums.
                     </p>
                   </div>
                   <div className="flex gap-10 justify-center items-center hover:bg-white p-4 rounded-lg cursor-pointer">
                     <SlBookOpen className="text-fcolor my-" size={90} />
                     <p>
-                      <strong>User management:</strong> Allows administrators to manage user accounts, including creating new accounts, setting permissions, and managing user roles.
+                      <strong>User management:</strong> Allows administrators to
+                      manage user accounts, including creating new accounts,
+                      setting permissions, and managing user roles.
                     </p>
                   </div>
                   <div className="flex gap-10 justify-center items-center hover:bg-white p-4 rounded-lg cursor-pointer">
                     <SlBookOpen className="text-fcolor my-" size={90} />
                     <p>
-                      <strong>Assessment and grading:</strong>  Allows instructors to create and manage assessments, such as quizzes and exams, and assign grades to students.
+                      <strong>Assessment and grading:</strong> Allows
+                      instructors to create and manage assessments, such as
+                      quizzes and exams, and assign grades to students.
                     </p>
                   </div>
                   <div className="flex gap-10 justify-center items-center hover:bg-white p-4 rounded-lg cursor-pointer">
                     <SlBookOpen className="text-fcolor my-" size={90} />
                     <p>
-                      <strong>Progress tracking:</strong>  Allows instructors and administrators to track the progress of learners, including course completion rates, assessment results, and overall performance.
+                      <strong>Progress tracking:</strong> Allows instructors and
+                      administrators to track the progress of learners,
+                      including course completion rates, assessment results, and
+                      overall performance.
                     </p>
                   </div>
-
                 </div>
-                <img src="./tekgro-graphics-lms-illustration.png" className="h-max hidden xl:flex" alt="" />
+                <img
+                  src="./tekgro-graphics-lms-illustration.png"
+                  className="h-max hidden xl:flex"
+                  alt=""
+                />
               </div>
             </div>
-           
+
             <div
               className="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden"
               id="settings"
