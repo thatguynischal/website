@@ -22,7 +22,7 @@ const Footer = () => {
         <img
           src="./Rectangle.png"
           alt=""
-          className="rounded-3xl h-96 md:h-56 absolute -z-50 w-full"
+          className="rounded-3xl h-96 md:h-56 absolute  w-96 -z-50 lg:w-full"
         />
         <div className="px-20 flex flex-col justify-center items-center">
           <p className="text-2xl text-white text-center font-bold">
@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
       <div className="lg:flex grid gap-16 p-10 lg:px-36">
         <div className="flex flex-col gap-4">
-          <p className="text-fcolor text-lg lg:mt-0 mt-5 font-bold">
+          <p className="text-fcolor text-lg text-center lg:text-left lg:mt-0 mt-5 font-bold">
             Ready to get started?
           </p>
           <p className="text-button text-3xl font-bold">
