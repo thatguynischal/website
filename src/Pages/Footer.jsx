@@ -39,7 +39,7 @@ const Footer = () => {
             />
             <button
               type="button"
-              class="text-button lg:ml-0 ml-3  lg:mt-0 mt-3 bg-white hover:text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-bold rounded-full text-sm px-7 py-2.5 text-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-button lg:ml-0 ml-2 w-60 lg:w-auto lg:mt-0 mt-3 bg-white hover:text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-bold rounded-full text-sm px-7 py-2.5 text-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               <span className="text-xl">SUBSCRIBE NOW</span>
             </button>
@@ -48,7 +48,9 @@ const Footer = () => {
       </div>
       <div className="lg:flex grid gap-16 p-10 lg:px-36">
         <div className="flex flex-col gap-4">
-          <p className="text-fcolor text-lg font-bold">Ready to get started?</p>
+          <p className="text-fcolor text-lg lg:mt-0 mt-5 font-bold">
+            Ready to get started?
+          </p>
           <p className="text-button text-3xl font-bold">
             We will help you built your Online platform
           </p>
@@ -222,12 +224,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex p-5 lg:px-44 justify-center items-center text-center">
+      <div className="d-flex  lg:px-44 justify-center items-center text-center">
         <p>
           Copyright @2023 Upvivid Pty Ltd Trading as TekGro Australia. ACN : 631
           588 611
         </p>
-        <p className="my-5">
+        <p className="my-2">
           At Tekgro, we acknowledge and pay respect to the Indigenous peoples of
           Australia, the Torres Strait Islanders and the Aboriginals, who have a
           rich cultural heritage that dates back thousands of years. As an

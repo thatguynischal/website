@@ -105,8 +105,8 @@ const Capabilities = () => {
         </div>
       </div>
 
-      <div className="justify-center relative hidden lg:flex">
-        <img src="./pc-laptop.png" alt="" className="h-1/6" />
+      <div className="justify-center relative hidden  lg:flex">
+        <img src="./pc-laptop.png" alt="" className="h-1/6  relative" />
         <img src="./header.png" alt="" className="absolute top-16" />
         <div className="absolute top-40">
           <p className="text-2xl font-bold">
