@@ -2,8 +2,11 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Carouseltem from "../../Components/Carouseltem";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Capabilities = () => {
+  AOS.init();
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -107,7 +110,11 @@ const Capabilities = () => {
 
       <div className="justify-center relative hidden  lg:flex">
         <img src="./pc-laptop.png" alt="" className="h-1/6  relative" />
-        <img src="./header.png" alt="" className="absolute top-16" />
+        <img src="./header.png" alt="" className="absolute top-16"    data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1600"
+        />
         <div className="absolute top-40">
           <p className="text-2xl font-bold">
             Transform Your Online <br />

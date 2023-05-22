@@ -8,12 +8,12 @@ import Footer from "./Footer";
 const index = () => {
   return (
     <div>
-      {/* <Homepage />
+      <Homepage />
       <Products />
-      <Capabilities /> */}
+      <Capabilities />
       <Ads />
-      {/* <Academy />
-      <Footer /> */}
+      <Academy />
+      <Footer />
     </div>
   );
 };

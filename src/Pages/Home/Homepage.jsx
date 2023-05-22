@@ -5,7 +5,7 @@ import ReactAudioPlayer from "react-audio-player";
 const style = {};
 const Homepage = () => {
   return (
-    <div className="mainDiv h-screen relative">
+    <div className="mainDiv lg:h-screen relative">
       <div className="h-full flex flex-col">
         <div>
           <Menu />

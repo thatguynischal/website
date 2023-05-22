@@ -1,8 +1,11 @@
 import React from "react";
 import { SlBookOpen } from "react-icons/sl";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Products = () => {
+  AOS.init();
   return (
     <div className=" flex-col ">
       <div className="flex justify-center items-center">
@@ -87,6 +90,10 @@ const Products = () => {
                 src="./tekgro-graphics-lms-illustration.png"
                 className="h-max hidden xl:flex"
                 alt=""
+                data-aos="zoom-in"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="1600"
               />
             </div>
           </TabPanel>
