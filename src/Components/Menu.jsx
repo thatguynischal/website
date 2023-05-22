@@ -10,7 +10,7 @@ import {
 import { AiTwotonePhone } from "react-icons/ai";
 import { BsDot } from "react-icons/bs";
 import { Dropdown } from "flowbite-react";
-import Test from "../Pages/Test";
+import Test from "./Test";
 import { useState } from "react";
 import { List, X } from "phosphor-react";
 const Menu = () => {
@@ -25,7 +25,7 @@ const Menu = () => {
         <div class="max-w-screen flex flex-wrap items-center justify-between mx-4 p-4">
           <div className="flex gap-14 justify-center items-center">
             <a href="#" class="flex items-center flex-col lg:p-2">
-              <img src="./logo.svg" alt="" className="lg:h-12 h-8" />
+              <img src="./reallogoo.png" alt="" className="lg:h-10 h-8" />
             </a>
             <div className="hidden lg:block">
               <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none hover:ring-lime-200 dark:focus:ring-lime-800">

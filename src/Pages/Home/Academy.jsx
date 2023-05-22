@@ -1,5 +1,5 @@
 import React from "react";
-import Partners from "../Components/Partners";
+import Partners from "../../Components/Partners";
 
 const Academy = () => {
   const partnersData = [

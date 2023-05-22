@@ -12,6 +12,7 @@
   "dependencies": {
     "@coreui/coreui": "^4.2.6",
     "@coreui/react": "^4.8.0",
+    "aos": "^2.3.4",
     "flowbite": "^1.6.5",
     "flowbite-react": "^0.4.3",
     "phosphor-react": "^1.4.1",

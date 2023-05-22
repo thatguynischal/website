@@ -1,7 +1,7 @@
 import React from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { BsDot } from "react-icons/bs";
-import Flags from "../Components/Flags";
+import Flags from "../../Components/Flags"
 
 const Footer = () => {
   const flagData = [
@@ -17,7 +17,7 @@ const Footer = () => {
 
   const myFlagData = flagData.map((item) => <Flags img={item.img} />);
   return (
-    <div className="flex flex-col justify-center items-center gap-4 lg:gap-10 my-24 ">
+    <div className="flex flex-col justify-center items-center gap-4 lg:gap-10 my-10">
       <div className="relative flex flex-col justify-center items-center ">
         <img
           src="./Rectangle.png"
@@ -52,7 +52,7 @@ const Footer = () => {
             Ready to get started?
           </p>
           <p className="text-button text-3xl font-bold">
-            We will help you built your Online platform
+            We will help you build your online platform.
           </p>
           <p className="text-lg">
             If you're looking for a reliable and experienced partner for your
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>{" "}
         </div>
         <div className="flex  flex-col gap-4">
-          <img src="./xo2.gif" alt="" className="h-16 w-16 mx-auto" />
+          <img src="./price.gif" alt="" className="h-16 w-16 mx-auto" />
           <p className="text-fcolor text-lg font-bold text-center">
             Check Pricing
           </p>
@@ -76,8 +76,9 @@ const Footer = () => {
             Lorem ipsum dolor sit a corporis architecto quidem? Aliquam, ut.
           </p>
           <div className="flex text-button mx-auto ">
-            <span className="font-bold  ">Pricing</span>
-            <MdKeyboardDoubleArrowRight className="my-1" />
+            <a href="#" className="font-bold hover:text-fcolor flex gap-1">
+              Pricing <MdKeyboardDoubleArrowRight className="my-1.5" />
+            </a>
           </div>
         </div>
         <div className="flex flex-col gap-4">
@@ -89,8 +90,9 @@ const Footer = () => {
             We are on standby to answer any of your questions
           </p>
           <div className="flex text-button mx-auto">
-            <span className="font-bold ">View More</span>
-            <MdKeyboardDoubleArrowRight className="my-1" />
+            <a href="#" className="font-bold hover:text-fcolor flex gap-1">
+              View More<MdKeyboardDoubleArrowRight className="my-1" />
+            </a>
           </div>
         </div>
       </div>
@@ -101,13 +103,12 @@ const Footer = () => {
               src="./tekgro-logo.png"
               alt=""
               className="lg:w-96 w-36"
-              style={{ objectFit: "contain" }}
             />
           </div>
 
           <div>
             <p className="leading-6">
-              Tekgro specializes in providing comprehensive digital solutions.
+               specializes in providing comprehensive digital solutions.
               We are a team of experts who are dedicated to helping businesses
               grow by leveraging the latest technology and digital marketing
               techniques. Our core services include software development, web
@@ -126,11 +127,19 @@ const Footer = () => {
             <p className="text-xl   flex  items-center text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Quick Link
             </p>
-            <div className="hidden lg:ml-12   md:block  lg:block">
-              <p>Tekgro Overview</p>
-              <p>Career</p>
-              <p>Blogs</p>
-              <p>Knowledge Base</p>
+            <div className="hidden lg:ml-12   md:flex  lg:flex flex-col">
+              <a href="#" className="hover:text-fcolor">
+                Tekgro Overview
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Career
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Blogs
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Knowledge Base
+              </a>
             </div>
             <div className=" lg:ml-11 lg:hidden md:hidden flex">
               <p>Tekgro Overview | Career | Blogs | Knowledge Base</p>
@@ -140,15 +149,31 @@ const Footer = () => {
             <p className="text-xl flex items-center  text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Tekgro Capability
             </p>
-            <div className="hidden lg:ml-11  md:block  lg:block">
-              <p>Design & Development</p>
-              <p>Security, Tech Support</p>
-              <p>Web Optimization</p>
-              <p>Digital Solution</p>
-              <p>Software Solution</p>
-              <p>Domain & SSL</p>
-              <p>Digital Marketing</p>
-              <p>Web Hosting</p>
+            <div className="hidden lg:ml-11  md:flex  lg:flex flex-col">
+              <a href="#" className="hover:text-fcolor">
+                Design & Development
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Security, Tech Support
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Web Optimization
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Digital Solution
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Software Solution
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Domain & SSL
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Digital Marketing
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Web Hosting
+              </a>
             </div>
             <div className=" lg:ml-11 lg:hidden md:hidden flex">
               <p>
@@ -162,10 +187,16 @@ const Footer = () => {
             <p className="text-xl flex items-center   text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Legal
             </p>
-            <div className="hidden  lg:ml-11  md:block  lg:block">
-              <p>Privacy Policy</p>
-              <p>Disclaimer</p>
-              <p>Terms & Condition</p>
+            <div className="hidden  lg:ml-11  md:flex  lg:flex flex-col">
+              <a href="#" className="hover:text-fcolor">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Disclaimer
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Terms & Condition
+              </a>
             </div>
             <div className=" lg:ml-11 lg:hidden md:hidden flex">
               <p> Privacy Policy | Disclaimer | Terms & Condition </p>
@@ -175,12 +206,22 @@ const Footer = () => {
             <p className="text-xl flex items-center   text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Social Media
             </p>
-            <div className="hidden lg:ml-10  md:block  lg:block">
-              <p className="flex">Youtube</p>
-              <p>Facebook</p>
-              <p>Instagram</p>
-              <p>TikTok</p>
-              <p>LinkedIn</p>
+            <div className="hidden lg:ml-10  md:flex  lg:flex flex-col">
+              <a href="#" className="hover:text-fcolor">
+                Youtube
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Facebook
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Instagram
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                TikTok
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                LinkedIn
+              </a>
             </div>
             <div className=" lg:ml-11 lg:hidden md:hidden flex">
               <p>Facebook | Instagram | TikTok | LinkedIn |</p>
@@ -191,12 +232,25 @@ const Footer = () => {
             <p className="text-xl flex items-center   text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Australia
             </p>
-            <div className="hidden lg:ml-10  md:block  lg:block">
-              <p>0280 743 892</p>
-              <p>support@tekgro.com.au</p>
-              <p>43 Cremin Street, Upper</p>
-              <p>Mount Gravatt QLD 4122</p>
-              <p>ABN : 52 631 588 611</p>
+            <div className="hidden lg:ml-10  md:flex  lg:flex flex-col">
+              <a href="tel:0280 743 892" className="hover:text-fcolor">
+                0280 743 892
+              </a>
+              <a
+                href="mailto:support@tekgro.com.au"
+                className="hover:text-fcolor"
+              >
+                support@tekgro.com.au
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                43 Cremin Street, Upper
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Mount Gravatt QLD 4122
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                ABN : 52 631 588 611
+              </a>
             </div>
             <div className=" lg:ml-11 lg:hidden md:hidden flex">
               <p>
@@ -209,11 +263,22 @@ const Footer = () => {
             <p className="text-xl flex items-center   text-button font-bold">
               <BsDot size={50} className="font-extrabold " /> Nepal
             </p>
-            <div className="hidden lg:ml-8   md:block  lg:block">
-              <p>+977-9802330080</p>
-              <p>support@tekgro.com.au</p>
-              <p>Old Baneshwor</p>
-              <p>Kathmandu</p>
+            <div className="hidden lg:ml-8   md:flex  lg:flex flex-col">
+              <a href="tel:9802330080" className="hover:text-fcolor">
+                +977-9802330080
+              </a>
+              <a
+                href="mailto:support@tekgro.com.au"
+                className="hover:text-fcolor"
+              >
+                support@tekgro.com.au
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Old Baneshwor
+              </a>
+              <a href="#" className="hover:text-fcolor">
+                Kathmandu
+              </a>
             </div>
             <div className=" lg:ml-11 lg:hidden md:hidden flex">
               <p>

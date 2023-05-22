@@ -1,6 +1,9 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Ads = () => {
+  AOS.init();
   return (
     <div className="flex gap-2 flex-col p-5 relative">
       <img
@@ -43,12 +46,24 @@ const Ads = () => {
             src="./tekgro-graphics-digital-marketing.png"
             alt=""
             className="h-96"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1600"
           />
         </div>
       </div>
       <div className="flex justify-center items-center gap-32 my-10 lg:my-0">
         <div className="hidden lg:flex">
-          <img src="./tekgro-graphics-blogs-02.png" alt="" className="h-96" />
+          <img
+            src="./tekgro-graphics-blogs-02.png"
+            alt=""
+            className="h-96"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1600"
+          />
         </div>
         <div className="flex   justify-center items-center">
           <div className="flex justify-center max-w-[500px]   items-center">

@@ -1,21 +1,11 @@
 import { useState } from "react";
-import Homepage from "./Pages/Homepage";
-import Products from "./Pages/Products";
-import Capabilities from "./Pages/Capabilities";
-import Ads from "./Pages/Ads";
-import Academy from "./Pages/Academy";
-import Footer from "./Pages/Footer";
+import Home from "./Pages/Home/index";
 import "flowbite";
 
 function App() {
   return (
     <>
-      <Homepage />
-      <Products />
-      <Capabilities />
-      <Ads />
-      <Academy />
-      <Footer />
+   <Home />
     </>
   );
 }

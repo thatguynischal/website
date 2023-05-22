@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Carouseltem from "../Components/Carouseltem";
+import Carouseltem from "../../Components/Carouseltem";
 
 const Capabilities = () => {
   const responsive = {
